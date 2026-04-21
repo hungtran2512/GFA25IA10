@@ -29,25 +29,25 @@ Dự án này tập trung vào việc đánh giá hiệu năng của một mô h
 ### 1. Yêu cầu hệ thống (Prerequisites)
 Đảm bảo bạn đã cài đặt Python 3.8+ và các thư viện cần thiết. Chạy lệnh sau để cài đặt:
 
-\`\`\`bash
+```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
-\`\`\`
+```
 *(Lưu ý: Bạn cần có model LLM (Ollama) đang chạy ở local với tên `detector-risk` hoặc cập nhật lại tên model trong file test_ollama_direct.py)*
 
 ### 2. Chạy kịch bản đánh giá mô hình
 Script này sẽ thực hiện lấy mẫu (sampling), gửi query tới LLM, và tính toán các chỉ số.
 
-\`\`\`bash
+```bash
 python evaluate_finetune_model_fixed.py
-\`\`\`
+```
 *Kết quả:* Script sẽ in ra màn hình cảnh báo về mất cân bằng dữ liệu (nếu có) và xuất ra file `stratified_evaluation_results.json`.
 
 ### 3. Sinh biểu đồ báo cáo
 Sau khi đã có file JSON kết quả, chạy lệnh sau để xuất ra các biểu đồ trực quan:
 
-\`\`\`bash
+```bash
 python create_classification_report_visual.py
-\`\`\`
+```
 *Kết quả:* Sẽ có 2 file `.png` được tạo ra trong thư mục hiện tại để bạn đưa vào báo cáo.
 
 ## 📊 Phân tích kết quả (Evaluation Interpretation)
