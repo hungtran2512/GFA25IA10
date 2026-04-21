@@ -14,7 +14,7 @@ Dự án này tập trung vào việc đánh giá hiệu năng của một mô h
 
 ## 📂 Cấu trúc thư mục (Project Structure)
 
-\`\`\`text
+```text
 .
 ├── evaluate_finetune_model_fixed.py    # Main script: Xử lý dữ liệu, dự đoán và lưu kết quả
 ├── create_classification_report_visual.py # Script sinh biểu đồ trực quan từ kết quả
@@ -22,7 +22,7 @@ Dự án này tập trung vào việc đánh giá hiệu năng của một mô h
 ├── stratified_evaluation_results.json  # (Output) File log chứa kết quả dự đoán chi tiết
 ├── visual_1_confusion_matrix.png       # (Output) Ảnh Ma trận nhầm lẫn
 └── visual_2_metrics_report.png         # (Output) Ảnh so sánh các chỉ số Precision/Recall/F1
-\`\`\`
+```
 
 ## 🚀 Hướng dẫn sử dụng (Installation & Usage)
 
